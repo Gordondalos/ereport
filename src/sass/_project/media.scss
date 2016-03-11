@@ -1,0 +1,26 @@
+///*==========  Desktop First Method  ==========*/
+///* Large Devices, Wide Screens */
+//
+////
+////.trans
+////	-webkit-transition: all .5s ease
+////	time-moz-transition: all .5s ease
+////	time-ms-transition: all .5s ease
+////	time-o-transition: all .5s ease
+////	timetransition: all .5s ease time
+//
+////@media only screen and (max-width : 1200px)
+//
+@include media-breakpoint-down(sm) {
+  .block{
+    margin-top: 1rem;
+  }
+  .wrapper-logo{
+    margin-top: 5rem;
+  }
+}
+@include media-breakpoint-down(sm) {
+  .form-wrapper{
+    margin-left: -40px;
+  }
+}
