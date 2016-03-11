@@ -92,7 +92,7 @@ section {
 }
 
 .section-section2 {
-  background: #16a085;
+  @include gradient-vertical(#7A1A91, #3D00D3);
   height: 100%;
 }
 
@@ -107,15 +107,28 @@ section {
     margin-right: 1rem;
     background-color: rgba(255,255,255,.7);
     transition: All ease .8s;
+    position: relative;
     &:hover{
       background-color: rgba(255,255,255,1);
+      transform: scale(1.25);
+      z-index: 3;
+
 
     }
   }
 }
 
-#section-section4 {
-  background: #c0392b;
+.section-section4 {
+  @include gradient-vertical(#09710c, #69971c);
+  height: 100%;
+}
+
+.section-section5{
+  background-color: #2a62e0;
+  height: 100%;
+  img{
+    max-width: 250px;
+  }
 }
 
 .horizon-prev, .horizon-next {
